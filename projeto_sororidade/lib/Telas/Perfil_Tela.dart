@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:projeto_sororidade/Telas/TelaLogin.dart';
 
 void main() => runApp(MyApp());
 
@@ -135,7 +136,12 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           Container(
-            body: Center(
+              height: MediaQuery.of(context).size.height/3,
+              padding: EdgeInsets.all(20),
+              color: Colors.white,
+              child: Row(
+                children: [
+                 Center(
               child: RaisedButton(
                 child: Text('Abrir rota(tela)'),
                   onPressed: () {
@@ -146,10 +152,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   },
               ),
             ),
-            height: MediaQuery.of(context).size.height/3,
-            padding: EdgeInsets.all(20),
-            color: Colors.white,
-            child: Column(
+            Column(
               //mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Row(
@@ -216,6 +219,8 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
 
+                ],
+              )
           ),
           Container(
             padding: EdgeInsets.all(11),
